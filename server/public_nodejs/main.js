@@ -3,7 +3,7 @@
 
 const express = require('express');
 const router = express.Router();
-var serviceAccount = require("./scooters-9ba1f-firebase-adminsdk-az4fw-a426b32e42.json");
+var serviceAccount = require("./PRIVATE-KEY.json");
 var admin = require ("firebase-admin");
 var timestamp;
 var run =  require('./run');
