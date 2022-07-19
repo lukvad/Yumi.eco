@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Yumi\app\src\main\assets"><file name="font/akvaler.ttf" path="D:\Yumi\app\src\main\assets\font\akvaler.ttf"/><file name="font/astal.ttf" path="D:\Yumi\app\src\main\assets\font\astal.ttf"/><file name="font/ostrich.ttf" path="D:\Yumi\app\src\main\assets\font\ostrich.ttf"/></source><source path="D:\Yumi\app\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="D:\Yumi\app\src\release\assets"/></dataSet></merger>
