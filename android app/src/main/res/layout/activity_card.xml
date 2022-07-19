@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    tools:context="eco.yumi.Card">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:elevation="20dp"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="@string/card"
+                android:fontFamily="@font/comfortaa"
+                android:textSize="28dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow" />
+
+            <ImageButton
+                android:id="@+id/phone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/balance"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/toolbar"
+        android:elevation="20dp"
+        android:padding="25dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/card"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/addedCard"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="280dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/cardName"
+        android:id="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:textSize="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/tPayReadme"
+        android:id="@+id/link"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text"
+        android:textSize="12dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:id="@+id/firstCard">
+    <RadioButton
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/comfortaa"
+        android:text=""
+        android:textColor="@color/colorSecondary"
+        />
+        <ImageView
+            android:id="@+id/card1Image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:padding="25dp"
+            android:scaleType="fitCenter"
+            android:layout_toEndOf="@+id/card1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card1Text"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/card1Image"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card1delete"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/card1Text"
+            android:textColor="@color/colorSecondary"
+            android:layout_marginLeft="30dp"
+            android:text="@string/delete"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstCard"
+        android:id="@+id/secondCard">
+        <RadioButton
+            android:id="@+id/card2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/comfortaa"
+            android:text=""
+            android:textColor="@color/colorSecondary"
+            />
+        <ImageView
+            android:id="@+id/card2Image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:padding="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/card"
+            android:layout_toEndOf="@+id/card2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card2Text"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/card2Image"
+            android:text="****8112"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/card2delete"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/card2Text"
+            android:textColor="@color/colorSecondary"
+            android:layout_marginLeft="30dp"
+            android:text="@string/delete"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addCard"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_shape_start"
+        android:text="@string/addCard"
+        android:textAllCaps="true"
+        android:textColor="@color/colorSecondary"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

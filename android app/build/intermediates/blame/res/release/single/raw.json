@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_ground_overlay.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_ground_overlay.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_unsupported.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_unsupported.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_extended_data.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_extended_data.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\style_json.json",
+        "source": "D:\\Yumi\\app\\src\\main\\res\\raw\\style_json.json"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_basic_placemark.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_basic_placemark.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_poly_style_boolean_alpha.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_poly_style_boolean_alpha.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_ballon_gx_prefix.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_ballon_gx_prefix.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_default_balloon.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_default_balloon.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_cdata.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_cdata.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_document_nest.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_document_nest.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_draw_order_ground_overlay.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_draw_order_ground_overlay.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_nested_multigeometry.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_nested_multigeometry.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_visibility_ground_overlay.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_visibility_ground_overlay.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_basic_folder.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_basic_folder.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_inline_style.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_inline_style.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_poly_style_boolean_numeric.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_poly_style_boolean_numeric.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_nested_folders.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_nested_folders.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_multiple_placemarks.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_multiple_placemarks.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_multigeometry_placemarks.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_multigeometry_placemarks.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_unknwown_folder.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_unknwown_folder.kml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\release\\raw\\amu_ground_overlay_color.kml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\android-maps-utils-0.5.aar\\a325f2124bcad123f08789f615ac3230\\res\\raw\\amu_ground_overlay_color.kml"
+    }
+]

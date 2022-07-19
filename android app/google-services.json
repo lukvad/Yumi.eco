@@ -1,0 +1,184 @@
+{
+  "project_info": {
+    "project_number": "338685599261",
+    "firebase_url": "https://scooters-9ba1f.firebaseio.com",
+    "project_id": "scooters-9ba1f",
+    "storage_bucket": "scooters-9ba1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338685599261:android:2f32532f1035e5f9",
+        "android_client_info": {
+          "package_name": "com.lukvad.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338685599261-5r6buq0l6j69m6c762mtqgr7k6pmcvoh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukvad.admin",
+            "certificate_hash": "1afefaf244d0fcf7b3fb9e3c83fdba852e5a81f5"
+          }
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-VIBtjGpBi4Lh3GbkPAzPILuCxuv4rUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338685599261-8qu994gnog8rsoimafg4dlhdllnvvhqr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Mad-Pixel.Yumi"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338685599261:android:af21e1969da5f111",
+        "android_client_info": {
+          "package_name": "com.lukvad.scooter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338685599261-6p0kmp3jhap5mqvhji4cdph1d49ksg74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukvad.scooter",
+            "certificate_hash": "fe7ab229a9e886d45619f1c6a7d756594b772788"
+          }
+        },
+        {
+          "client_id": "338685599261-kbuqk8kih4umra72mba3b4i899gjeq1n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lukvad.scooter",
+            "certificate_hash": "185a7cb304dbaa22aaa165d3df651c5d7654ea32"
+          }
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-VIBtjGpBi4Lh3GbkPAzPILuCxuv4rUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338685599261-8qu994gnog8rsoimafg4dlhdllnvvhqr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Mad-Pixel.Yumi"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338685599261:android:47dbead315800508",
+        "android_client_info": {
+          "package_name": "eco.yumi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338685599261-e66l4gntr9jg04fvpbfvoqp7ve3o7ov6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.yumi",
+            "certificate_hash": "e3bb7da4fedef202ecf2663a95b9c8607ae99d7a"
+          }
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-VIBtjGpBi4Lh3GbkPAzPILuCxuv4rUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338685599261-pehbfkip8brr8blltcgcavajj68lr8m4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338685599261-8qu994gnog8rsoimafg4dlhdllnvvhqr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Mad-Pixel.Yumi"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

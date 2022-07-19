@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eco.yumi.Details">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:elevation="20dp"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:fontFamily="@font/comfortaa"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/arrow" />
+
+            <ImageButton
+                android:id="@+id/phone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/id"
+        app:srcCompat="@drawable/id" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:fontFamily="@font/comfortaa"
+        android:paddingLeft="40dp"
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/idTitle"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/title">
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="500dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstNameTitle"
+        android:textSize="13dp"
+        android:text="@string/firstname"
+        android:layout_alignStart="@+id/firstName"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/firstName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/firstName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstNameTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:textColorHint="@color/DarkGrey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/surnameTitle"
+        android:layout_below="@id/firstName"
+        android:textSize="13dp"
+        android:text="@string/surname"
+        android:layout_alignStart="@+id/email"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/surName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surnameTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:textColorHint="@color/DarkGrey" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/surName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:id="@+id/emailTitle"
+        android:layout_below="@id/surName"
+        android:textSize="13sp"
+        android:text="Email / Login"
+        android:layout_alignStart="@+id/email"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/emailTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/DarkGrey" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/email"
+        android:textSize="13sp"
+        android:text="@string/address1"
+        android:layout_alignStart="@+id/email"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addressTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/DarkGrey" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idnTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/address"
+        android:textSize="13sp"
+        android:text="@string/id"
+        android:layout_alignStart="@+id/email"
+        android:fontFamily="@font/comfortaa"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/idno"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idnTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/DarkGrey" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/idno"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/phoneno"
+        android:layout_below="@+id/idno"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/phone"
+        android:textSize="13sp" />
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/DarkGrey" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneno"
+                android:layout_marginTop="5dp"
+                android:id="@+id/approvePassword"
+                android:text="@string/changePassword2"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorSecondary"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
+
+

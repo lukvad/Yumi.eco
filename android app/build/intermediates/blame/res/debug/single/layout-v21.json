@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\146635b204600f0c3d3ab07f1db7446a\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\146635b204600f0c3d3ab07f1db7446a\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\146635b204600f0c3d3ab07f1db7446a\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Yumi\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Łukasz\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\146635b204600f0c3d3ab07f1db7446a\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]

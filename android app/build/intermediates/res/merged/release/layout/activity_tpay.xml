@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tPayToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tpay_toolbar"
+        android:elevation="8dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <ProgressBar
+            android:id="@+id/tPayProgressBar"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="end"
+            android:indeterminate="true"
+            android:padding="8dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/tPayWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

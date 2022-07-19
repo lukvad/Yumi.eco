@@ -1,0 +1,98 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="eco.yumi.VerificationActivity"
+    android:id="@+id/MapWindow">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa"
+        android:id="@+id/phoneNumber"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/DarkGrey"
+        android:layout_below="@+id/phoneNumber"
+        android:layout_marginTop="30dp">
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone2"
+        android:textSize="15sp"
+
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"    android:gravity="center_horizontal"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/comfortaa"
+        android:id="@+id/welcome2"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:hint="@string/code"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape_start"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/welcome2"
+        android:fontFamily="@font/comfortaa"
+        android:id="@+id/code"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/changePhone"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/code"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:id="@+id/changePhone"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/happy"
+        android:layout_below="@+id/code"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/back"
+        android:layout_width="250dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="45dp"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/button_shape_start"
+        android:text="@string/proceed"
+        android:textColor="@color/colorSecondary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+
+
+</RelativeLayout>

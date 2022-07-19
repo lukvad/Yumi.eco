@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="eco.yumi.MapsActivity"
+    android:clipToPadding="false"
+    android:id="@+id/MapWindow"
+    android:background="@drawable/black">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        android:elevation="20dp"
+        android:id="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp"
+                android:src="@drawable/yumi" />
+
+            <ImageButton
+                android:id="@+id/menu"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/menu" />
+
+            <ImageButton
+                android:id="@+id/phone"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:elevation="20dp"
+                android:padding="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/phone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false"
+        android:padding="20dp" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/reserveWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0.75"
+        android:background="@color/colorPrimary"
+        android:elevation="20dp">
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_alignBottom="@+id/start"
+            android:textColor="@color/colorSecondary"
+            android:background="@drawable/button_shape_start"
+            android:padding="4dp"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/clock2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_alignBottom="@+id/start"
+            android:textColor="@color/colorSecondary"
+            android:background="@drawable/button_shape_start"
+            android:padding="4dp"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_marginBottom="40dp"
+            android:id="@+id/start"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/linearDistance"
+            android:background="@drawable/button_shape_start"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondary"
+            android:text="@string/off"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/out"
+            android:layout_marginStart="40dp"
+
+            android:layout_alignBottom="@+id/start"
+            android:layout_toEndOf="@+id/start"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_shape_start"
+            android:text="@string/cancel"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancel"
+            android:padding="5dp"
+
+            android:textColor="@color/colorSecondary" />
+
+        <ImageButton
+            android:id="@+id/helmet"
+            android:layout_marginStart="20dp"
+
+            android:layout_alignBottom="@+id/start"
+            android:layout_toEndOf="@+id/parking"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_shape_start"
+            android:elevation="20dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/helmet" />
+
+        <ImageButton
+            android:id="@+id/parking"
+            android:layout_marginStart="20dp"
+            android:layout_alignBottom="@+id/start"
+            android:layout_toEndOf="@+id/start"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/button_shape_start"
+            android:elevation="20dp"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/parking" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/linearLogo">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/logo"
+                app:srcCompat="@drawable/logo" />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/DarkGrey"
+                    tools:textSize="12sp"  />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/linearLogo"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/bat"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/bat"
+
+                    app:srcCompat="@drawable/bat" />
+
+                <TextView
+                        android:id="@+id/range"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:textColor="@color/DarkGrey"
+                         />
+
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearAddress"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_below="@+id/linearBat"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/street"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/marker"
+                    app:srcCompat="@drawable/marker"
+
+                    />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/DarkGrey"
+                     />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearAddress"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/linearDistance">
+
+                    <ImageView
+                        android:id="@+id/walk"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/distance"
+                        app:srcCompat="@drawable/distance"
+                        />
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:textColor="@color/DarkGrey"
+                      />
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

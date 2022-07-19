@@ -1,0 +1,716 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+                              ./MK_GSM/mk_gsm.o (__udivmodhi4)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o (exit)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+                              ./MK_USART/mkuart.o (__do_clear_bss)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strcmp_P.o)
+                              ./main.o (strcmp_P)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o)
+                              ./MK_USART/mkuart.o (__itoa)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o) (__itoa_ncheck)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o) (__utoa_common)
+c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strrev.o)
+                              c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o) (strrev)
+
+Allocating common symbols
+Common symbol       size              file
+
+stimers             0x15              ./soft_timers.o
+TOKEN               0x2               ./MK_GSM/mk_atcmdlist.o
+UART_TxHead         0x1               ./MK_USART/mkuart.o
+Lattitude           0x2               ./MK_GSM/mk_atcmdlist.o
+ascii_line          0x1               ./MK_USART/mkuart.o
+STATE               0x2               ./MK_GSM/mk_atcmdlist.o
+UART_TxTail         0x1               ./MK_USART/mkuart.o
+atprocess           0x7               ./MK_GSM/mk_gsm.o
+GPS_READY           0x2               ./MK_GSM/mk_atcmdlist.o
+EW                  0x2               ./MK_GSM/mk_atcmdlist.o
+Longitude           0x2               ./MK_GSM/mk_atcmdlist.o
+buf                 0x100             ./main.o
+bat                 0x2               ./MK_GSM/mk_gsm.o
+NS                  0x2               ./MK_GSM/mk_atcmdlist.o
+UART_TxBuf          0x2               ./MK_USART/mkuart.o
+res                 0x1               ./MK_GSM/mk_gsm.o
+UART_RxHead         0x1               ./MK_USART/mkuart.o
+UART_RxTail         0x1               ./MK_USART/mkuart.o
+gpsprocess          0x2               ./MK_GSM/mk_gsm.o
+UART_RxBuf          0x100             ./MK_USART/mkuart.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+LOAD ./MK_USART/mkuart.o
+LOAD ./MK_GSM/mk_atcmdlist.o
+LOAD ./MK_GSM/mk_gsm.o
+LOAD ./common.o
+LOAD ./main.o
+LOAD ./soft_timers.o
+START GROUP
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libm.a
+LOAD c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a
+END GROUP
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xcd6
+ *(.vectors)
+ .vectors       0x00000000       0x26 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000026                . = ALIGN (0x2)
+                0x00000026                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000026        0x0 linker stubs
+ *(.trampolines*)
+                0x00000026                __trampolines_end = .
+ *(.progmem*)
+ .progmem.data.atlist
+                0x00000026       0x28 ./MK_GSM/mk_atcmdlist.o
+                0x00000026                atlist
+ .progmem.data.cipclose
+                0x0000004e        0xa ./MK_GSM/mk_atcmdlist.o
+                0x0000004e                cipclose
+ .progmem.data.enter
+                0x00000058        0x3 ./MK_GSM/mk_atcmdlist.o
+                0x00000058                enter
+ .progmem.data.gpsrd
+                0x0000005b        0x7 ./MK_GSM/mk_atcmdlist.o
+                0x0000005b                gpsrd
+ .progmem.data.host
+                0x00000062       0x18 ./MK_GSM/mk_atcmdlist.o
+                0x00000062                host
+ .progmem.data.http
+                0x0000007a        0xa ./MK_GSM/mk_atcmdlist.o
+                0x0000007a                http
+ .progmem.data.get_slash
+                0x00000084        0x2 ./MK_GSM/mk_atcmdlist.o
+                0x00000084                get_slash
+ .progmem.data.get_token
+                0x00000086       0x12 ./MK_GSM/mk_atcmdlist.o
+                0x00000086                get_token
+ .progmem.data.cipsend
+                0x00000098        0x9 ./MK_GSM/mk_atcmdlist.o
+                0x00000098                cipsend
+ .progmem.data.cipstart
+                0x000000a1       0x27 ./MK_GSM/mk_atcmdlist.o
+                0x000000a1                cipstart
+ .progmem.data.qcgact
+                0x000000c8        0x8 ./MK_GSM/mk_atcmdlist.o
+                0x000000c8                qcgact
+ .progmem.data.cgdcont
+                0x000000d0       0x1b ./MK_GSM/mk_atcmdlist.o
+                0x000000d0                cgdcont
+ .progmem.data.cgact
+                0x000000eb        0xb ./MK_GSM/mk_atcmdlist.o
+                0x000000eb                cgact
+ .progmem.data.qcgatt
+                0x000000f6        0x8 ./MK_GSM/mk_atcmdlist.o
+                0x000000f6                qcgatt
+ .progmem.data.cgatt
+                0x000000fe        0x9 ./MK_GSM/mk_atcmdlist.o
+                0x000000fe                cgatt
+ .progmem.data.cmgf
+                0x00000107        0x8 ./MK_GSM/mk_atcmdlist.o
+                0x00000107                cmgf
+ .progmem.data.cmgs
+                0x0000010f       0x12 ./MK_GSM/mk_atcmdlist.o
+                0x0000010f                cmgs
+ .progmem.data.creg
+                0x00000121        0x6 ./MK_GSM/mk_atcmdlist.o
+                0x00000121                creg
+ .progmem.data.gps
+                0x00000127        0x7 ./MK_GSM/mk_atcmdlist.o
+                0x00000127                gps
+ .progmem.data.ate
+                0x0000012e        0x3 ./MK_GSM/mk_atcmdlist.o
+                0x0000012e                ate
+ .progmem.data.at_
+                0x00000131        0x3 ./MK_GSM/mk_atcmdlist.o
+                0x00000131                at_
+ .progmem.data.__c.2381
+                0x00000134        0xf ./main.o
+ .progmem.data.__c.2379
+                0x00000143        0xf ./main.o
+ .progmem.data.__c.2377
+                0x00000152        0xf ./main.o
+ .progmem.data.__c.2375
+                0x00000161        0xd ./main.o
+ .progmem.data.__c.2373
+                0x0000016e        0xe ./main.o
+ .progmem.data.__c.2371
+                0x0000017c        0x6 ./main.o
+ .progmem.data.__c.2369
+                0x00000182        0xb ./main.o
+ .progmem.data.__c.2367
+                0x0000018d        0x3 ./main.o
+                0x00000190                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000190                __ctors_start = .
+ *(.ctors)
+                0x00000190                __ctors_end = .
+                0x00000190                __dtors_start = .
+ *(.dtors)
+                0x00000190                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000190        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+                0x00000190                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000190        0xc c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000019c       0x10 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+                0x0000019c                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000001ac        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+ *(.init9)
+ *(.text)
+ .text          0x000001b0        0x2 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+                0x000001b0                __vector_1
+                0x000001b0                __bad_interrupt
+                0x000001b0                __vector_6
+                0x000001b0                __vector_13
+                0x000001b0                __vector_17
+                0x000001b0                __vector_7
+                0x000001b0                __vector_5
+                0x000001b0                __vector_4
+                0x000001b0                __vector_9
+                0x000001b0                __vector_2
+                0x000001b0                __vector_15
+                0x000001b0                __vector_8
+                0x000001b0                __vector_14
+                0x000001b0                __vector_10
+                0x000001b0                __vector_16
+                0x000001b0                __vector_18
+ .text          0x000001b2        0x0 ./MK_USART/mkuart.o
+ .text          0x000001b2        0x0 ./MK_GSM/mk_atcmdlist.o
+ .text          0x000001b2        0x0 ./MK_GSM/mk_gsm.o
+ .text          0x000001b2        0x0 ./common.o
+ .text          0x000001b2        0x0 ./main.o
+ .text          0x000001b2        0x0 ./soft_timers.o
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strcmp_P.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o)
+ .text          0x000001b2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strrev.o)
+                0x000001b2                . = ALIGN (0x2)
+ *(.text.*)
+ .text.register_uart_str_rx_event_callback
+                0x000001b2        0xa ./MK_USART/mkuart.o
+                0x000001b2                register_uart_str_rx_event_callback
+ .text.register_uart_str_rx_event_callback0
+                0x000001bc        0xa ./MK_USART/mkuart.o
+                0x000001bc                register_uart_str_rx_event_callback0
+ .text.USART_Init
+                0x000001c6       0x14 ./MK_USART/mkuart.o
+                0x000001c6                USART_Init
+ .text.uart_putc
+                0x000001da       0x28 ./MK_USART/mkuart.o
+                0x000001da                uart_putc
+ .text.uart_puts
+                0x00000202       0x16 ./MK_USART/mkuart.o
+                0x00000202                uart_puts
+ .text.uart_puts_P
+                0x00000218       0x1c ./MK_USART/mkuart.o
+                0x00000218                uart_puts_P
+ .text.uart_putint
+                0x00000234       0x36 ./MK_USART/mkuart.o
+                0x00000234                uart_putint
+ .text.__vector_12
+                0x0000026a       0x4e ./MK_USART/mkuart.o
+                0x0000026a                __vector_12
+ .text.uart_getc
+                0x000002b8       0x32 ./MK_USART/mkuart.o
+                0x000002b8                uart_getc
+ .text.uart_get_str
+                0x000002ea       0x42 ./MK_USART/mkuart.o
+                0x000002ea                uart_get_str
+ .text.UART_RX_STR_EVENT
+                0x0000032c       0x72 ./MK_USART/mkuart.o
+                0x0000032c                UART_RX_STR_EVENT
+ .text.uart_wait_char
+                0x0000039e       0x30 ./MK_USART/mkuart.o
+                0x0000039e                uart_wait_char
+ .text.__vector_11
+                0x000003ce       0x62 ./MK_USART/mkuart.o
+                0x000003ce                __vector_11
+ .text.send_at  0x00000430       0xd2 ./MK_GSM/mk_gsm.o
+                0x00000430                send_at
+ .text.wait_for_site
+                0x00000502       0x1c ./MK_GSM/mk_gsm.o
+                0x00000502                wait_for_site
+ .text.wait_for_at_process_end
+                0x0000051e       0x10 ./MK_GSM/mk_gsm.o
+                0x0000051e                wait_for_at_process_end
+ .text.adc_init
+                0x0000052e        0x8 ./common.o
+                0x0000052e                adc_init
+ .text.adc_read
+                0x00000536        0xc ./common.o
+                0x00000536                adc_read
+ .text.MAIN_EVENTS
+                0x00000542       0x10 ./common.o
+                0x00000542                MAIN_EVENTS
+ .text.mDelay   0x00000552       0x14 ./common.o
+                0x00000552                mDelay
+ .text.check    0x00000566       0x14 ./common.o
+                0x00000566                check
+ .text.reconnect
+                0x0000057a       0x98 ./common.o
+                0x0000057a                reconnect
+ .text.battery  0x00000612       0x64 ./common.o
+                0x00000612                battery
+ .text.parse_rs232
+                0x00000676       0xd8 ./main.o
+                0x00000676                parse_rs232
+ .text.tmr_at_process
+                0x0000074e       0x4c ./main.o
+                0x0000074e                tmr_at_process
+ .text.gsm_soft_start
+                0x0000079a      0x1cc ./main.o
+                0x0000079a                gsm_soft_start
+ .text.POST     0x00000966       0xce ./main.o
+                0x00000966                POST
+ .text.startup.main
+                0x00000a34       0x50 ./main.o
+                0x00000a34                main
+ .text.timers_process
+                0x00000a84       0x3e ./soft_timers.o
+ .text.soft_timers_init
+                0x00000ac2       0x18 ./soft_timers.o
+                0x00000ac2                soft_timers_init
+ .text.__vector_3
+                0x00000ada       0x5e ./soft_timers.o
+                0x00000ada                __vector_3
+ .text.timer_init
+                0x00000b38       0x24 ./soft_timers.o
+                0x00000b38                timer_init
+ .text.timer_enable
+                0x00000b5c       0x26 ./soft_timers.o
+                0x00000b5c                timer_enable
+ .text.timer_isenabled
+                0x00000b82       0x10 ./soft_timers.o
+                0x00000b82                timer_isenabled
+ .text.timer_disable
+                0x00000b92       0x10 ./soft_timers.o
+                0x00000b92                timer_disable
+ .text.timer_interval
+                0x00000ba2       0x24 ./soft_timers.o
+                0x00000ba2                timer_interval
+ .text.TIMERS_EVENT
+                0x00000bc6       0x58 ./soft_timers.o
+                0x00000bc6                TIMERS_EVENT
+ .text.libgcc.mul
+                0x00000c1e        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.div
+                0x00000c1e       0x28 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+                0x00000c1e                __udivmodhi4
+ .text.libgcc   0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.prologue
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.builtins
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fmul
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.fixed
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .text.libgcc.mul
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000c46        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .text.avr-libc
+                0x00000c46       0x12 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strcmp_P.o)
+                0x00000c46                strcmp_P
+ .text.avr-libc
+                0x00000c58       0x14 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o)
+                0x00000c58                __itoa
+                0x00000c58                itoa
+ .text.avr-libc
+                0x00000c6c       0x14 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o)
+                0x00000c6c                __itoa_ncheck
+ .text.avr-libc
+                0x00000c80       0x32 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o)
+                0x00000c80                __utoa_ncheck
+                0x00000c82                __utoa_common
+ .text.avr-libc
+                0x00000cb2       0x20 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strrev.o)
+                0x00000cb2                strrev
+                0x00000cd2                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000cd2        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+                0x00000cd2                _exit
+                0x00000cd2                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000cd2        0x4 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000cd6                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000cd6
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+ .data          0x00800060        0x0 ./MK_USART/mkuart.o
+ .data          0x00800060        0x0 ./MK_GSM/mk_atcmdlist.o
+ .data          0x00800060        0x0 ./MK_GSM/mk_gsm.o
+ .data          0x00800060        0x0 ./common.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 ./soft_timers.o
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strcmp_P.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strrev.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060      0x23c
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4/crtm8a.o
+ .bss           0x00800060        0x0 ./MK_USART/mkuart.o
+ .bss           0x00800060        0x0 ./MK_GSM/mk_atcmdlist.o
+ .bss           0x00800060        0x0 ./MK_GSM/mk_gsm.o
+ .bss           0x00800060        0x0 ./common.o
+ .bss           0x00800060        0x0 ./main.o
+ .bss           0x00800060        0x0 ./soft_timers.o
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/avr4\libgcc.a(_clear_bss.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strcmp_P.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(itoa_ncheck.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(utoa_ncheck.o)
+ .bss           0x00800060        0x0 c:/program files (x86)/atmel/avr tools/avr toolchain/bin/../lib/gcc/avr/4.8.1/../../../../avr/lib/avr4\libc.a(strrev.o)
+ *(.bss*)
+ .bss.uart_rx_str_event_callback0
+                0x00800060        0x2 ./MK_USART/mkuart.o
+ .bss.uart_rx_str_event_callback
+                0x00800062        0x2 ./MK_USART/mkuart.o
+ .bss.er_cnt    0x00800064        0x1 ./common.o
+                0x00800064                er_cnt
+ .bss.c         0x00800065        0x1 ./main.o
+                0x00800065                c
+ *(COMMON)
+ COMMON         0x00800066      0x107 ./MK_USART/mkuart.o
+                0x00800066                UART_TxHead
+                0x00800067                ascii_line
+                0x00800068                UART_TxTail
+                0x00800069                UART_TxBuf
+                0x0080006b                UART_RxHead
+                0x0080006c                UART_RxTail
+                0x0080006d                UART_RxBuf
+ COMMON         0x0080016d        0xe ./MK_GSM/mk_atcmdlist.o
+                0x0080016d                TOKEN
+                0x0080016f                Lattitude
+                0x00800171                STATE
+                0x00800173                GPS_READY
+                0x00800175                EW
+                0x00800177                Longitude
+                0x00800179                NS
+ COMMON         0x0080017b        0xc ./MK_GSM/mk_gsm.o
+                0x0080017b                atprocess
+                0x00800182                bat
+                0x00800184                res
+                0x00800185                gpsprocess
+ COMMON         0x00800187      0x100 ./main.o
+                0x00800187                buf
+ COMMON         0x00800287       0x15 ./soft_timers.o
+                0x00800287                stimers
+                0x0080029c                PROVIDE (__bss_end, .)
+                0x00000cd6                __data_load_start = LOADADDR (.data)
+                0x00000cd6                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080029c        0x0
+                0x0080029c                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080029c                PROVIDE (__noinit_end, .)
+                0x0080029c                _end = .
+                0x0080029c                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 ./MK_USART/mkuart.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000000       0x31 ./MK_GSM/mk_atcmdlist.o
+ .comment       0x00000000       0x31 ./MK_GSM/mk_gsm.o
+ .comment       0x00000000       0x31 ./common.o
+ .comment       0x00000000       0x31 ./main.o
+ .comment       0x00000000       0x31 ./soft_timers.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(MKPROBA2.elf elf32-avr)
+LOAD linker stubs

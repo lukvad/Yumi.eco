@@ -1,0 +1,190 @@
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/relative_background"
+    tools:context="eco.yumi.RegisterActivity"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/back"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/back"/>
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/registerTitle"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/emailTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/email"
+                    android:layout_below="@id/text"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/email"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/passwordTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/email"
+                    android:layout_below="@id/email"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/password"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passwordTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="4dp"
+                    android:inputType="textWebPassword"
+                    android:textColorHint="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/confirmPasswordTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/email"
+                    android:layout_below="@id/password"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/confrimPassword"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/confirmPasswordTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textWebPassword"
+                    android:textColorHint="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/firstNameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/email"
+                    android:layout_below="@id/confirmPassword"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/firstname"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/firstName"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstNameTitle"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/DarkGrey" />
+
+                <TextView
+                    android:id="@+id/surnameTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/email"
+                    android:layout_below="@id/firstName"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="@string/surname"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/surName"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/surnameTitle"
+                    android:layout_below="@+id/surnameTitle"
+                    android:inputType="text"
+                    android:textColorHint="@color/DarkGrey" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dataTitle"
+                    android:layout_alignStart="@+id/data"
+                    android:text="@string/born"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:layout_below="@+id/surName"/>
+                <EditText
+                    android:layout_width="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/data"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dateFormat"
+                    android:fontFamily="@font/comfortaa"
+                    android:layout_below="@+id/dataTitle"/>
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/data"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_shape_start"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="@string/proceed"
+                    android:textColor="@color/colorSecondary" />
+
+                <TextView
+                    android:id="@+id/foot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/register"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="1/2"
+                    android:textSize="13dp" />
+        </RelativeLayout>
+</ScrollView>
+
