@@ -1,4 +1,4 @@
-package com.lukvad.scooter;
+package com.lukvad.admin;
 
 import android.*;
 import android.app.AlertDialog;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView nRegister, nRecover;
     private FirebaseAuth nAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
-//    static Boolean isEmailVerified=false;
+    static Boolean isEmailVerified=false;
 
 
 
@@ -49,48 +49,33 @@ public class MainActivity extends AppCompatActivity {
         nEmail = findViewById(R.id.email);
         nPassword = findViewById(R.id.password);
         nLogin = findViewById(R.id.login);
-        nRegister = findViewById(R.id.register);
-        nRecover = findViewById(R.id.recover);
+
         firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if (user!=null) {
-//                    isEmailVerified = user.isEmailVerified();
-//                    if(isEmailVerified) {
-                        Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                    isEmailVerified = user.isEmailVerified();
+                    if(isEmailVerified) {
+                        Intent intent = new Intent(MainActivity.this, FullMap.class);
                         startActivity(intent);
                         finish();
                         return;
-//                    }
-//                    else Toast.makeText(MainActivity.this, getResources().getString(R.string.loginNotVerified),Toast.LENGTH_LONG).show();
+                    }
+                    else Toast.makeText(MainActivity.this, getResources().getString(R.string.loginNotVerified),Toast.LENGTH_LONG).show();
                 }
             }
         };
-        nRecover.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Email.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-        nRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+
+
 
         nLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String email = nEmail.getText().toString();
                 final String password = nPassword.getText().toString();
-                    if((!email.equals(""))&&(!password.equals(""))) {
-
+                if((!email.equals(""))&&(!password.equals(""))) {
+                    if(email.equals("lukvad@gmail.com")) {
                         nAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -100,7 +85,8 @@ public class MainActivity extends AppCompatActivity {
                             }
                         });
                     }
-                    else Toast.makeText(MainActivity.this, getResources().getString(R.string.loginBad), Toast.LENGTH_LONG).show();
+                }
+                else Toast.makeText(MainActivity.this, getResources().getString(R.string.loginBad), Toast.LENGTH_LONG).show();
             }
         });
 
@@ -116,10 +102,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         nAuth.removeAuthStateListener(firebaseAuthListener);
-//        if(!isEmailVerified){
-//            nAuth.signOut();
-//            finish();
-//        }
+        if(!isEmailVerified){
+            nAuth.signOut();
+            finish();
+        }
     }
 
 

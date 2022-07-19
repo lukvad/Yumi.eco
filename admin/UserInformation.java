@@ -1,4 +1,4 @@
-package com.lukvad.scooter;
+package com.lukvad.admin;
 import com.google.firebase.database.Exclude;
 
 import java.util.HashMap;
@@ -14,13 +14,18 @@ public class UserInformation {
     public Double balance;
     public String scooterName;
     public String email;
-    public  Double fIn;
     public Double charge;
+    public Double fIn;
+    public String state;
+    public String phone;
+    public String name;
+
+
     public UserInformation(){
 
     }
 
-    public UserInformation(String firstname, String surname, String alert, String address, String idno, Double balance, String scooterName, String email, Double fIn, Double charge){
+    public UserInformation(String firstname, String surname, String alert, String address, String idno, Double balance, String scooterName, String email, Double charge, Double fIn, String state, String phone, String name){
         this.firstname = firstname;
         this.surname = surname;
         this.alert = alert;
@@ -29,10 +34,11 @@ public class UserInformation {
         this.balance = balance;
         this.scooterName = scooterName;
         this.email = email;
-        this.fIn = fIn;
         this.charge = charge;
-
-
+        this.fIn = fIn;
+        this.state = state;
+        this.phone = phone;
+        this.name = name;
     }
  @Exclude
     public Map<String, Object> toMap() {
@@ -45,8 +51,11 @@ public class UserInformation {
      result.put("balance", balance);
      result.put("scooterName", scooterName);
      result.put("email", email);
-     result.put("*fIn&", fIn);
      result.put("charge", charge);
+     result.put("fIn", fIn);
+     result.put("state",state);
+     result.put("phone",phone);
+     result.put("name", name);
 
      return result;
  }

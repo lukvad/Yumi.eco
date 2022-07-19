@@ -1,12 +1,9 @@
-package com.lukvad.scooter;
+package com.lukvad.admin;
 import com.google.firebase.database.Exclude;
-import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import java.util.ArrayList;
-import java.util.List;
 public class ScooterInformation {
 
     public String battery;
@@ -15,7 +12,7 @@ public class ScooterInformation {
     public String state;
     public String name;
     public String userKey;
-    public Long start;
+    public Double start;
     public String engine;
 
     public Map<String, Boolean> stars = new HashMap<>();
@@ -23,7 +20,7 @@ public class ScooterInformation {
     public ScooterInformation(){
 
     }
-    public ScooterInformation(String battery, String latitude, String longitude, String state, String name, String userKey, Long start, String engine){
+    public ScooterInformation(String battery, String latitude, String longitude, String state, String name, String userKey, Double start, String engine){
         this.battery = battery;
         this.latitude = latitude;
         this.longitude = longitude;
